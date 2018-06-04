@@ -44,10 +44,6 @@ namespace LearningAboutMockTests
             b = 6;
             Assert.IsNotNull(b);
             Assert.AreEqual(b, 6);
-
-
-
-
         }
     }
 }
