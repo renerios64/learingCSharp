@@ -1,7 +1,5 @@
 ﻿using NUnit.Framework;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace LearningAboutMockTests
 {
@@ -50,9 +48,16 @@ namespace LearningAboutMockTests
 
             Book2 = new Books();
 
+            var a = Book2.Title;
+
+            Assert.IsNull(a);
+
             Assert.IsNotNull(Book2);
 
             Book2.Title = "Boom";
+
+            Book2.Title = null;
+
             Book2.PageCount = 200;
             Book2.Author = "Rene Rios";
             Book2.BookId = new Guid();

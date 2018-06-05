@@ -19,7 +19,7 @@ namespace LearningAboutMockTests
         {
             //int b = null;
             int c = 5;
-
+            
             var d = new NullingObject();
 
             Assert.False(d == null);
@@ -35,6 +35,10 @@ namespace LearningAboutMockTests
             int? b = null;
 
             Assert.IsNull(b);
+
+            if (b == null) {
+                var k = 3;
+            }
 
             var c = b ?? 3;
 
